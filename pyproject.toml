@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kagi-assistant-client"
+version = "0.1.0"
+description = "API client and crawler for Kagi Assistant conversations"
+readme = "README.md"
+license = { text = "RPL-1.5" }
+authors = [{ name = "Benjamin Lupton", email = "b@lupton.cc" }]
+requires-python = ">=3.9"
+
+[project.scripts]
+kagi-assistant = "kagi_assistant:main"
+
+[tool.setuptools]
+py-modules = ["kagi_assistant"]
