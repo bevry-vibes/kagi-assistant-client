@@ -55,3 +55,6 @@ docs/
 # CUSTOM
 
 .now
+.venv/
+__pycache__/
+*.egg-info/
