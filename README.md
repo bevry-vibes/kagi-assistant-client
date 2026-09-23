@@ -5,8 +5,13 @@ API client and crawler for [Kagi Assistant](https://assistant.kagi.com) conversa
 ## Install
 
 ```sh
-pip install .
-# or run directly: python3 kagi_assistant.py ...
+# install the kagi-assistant command globally
+uv tool install .
+# or run it inside the project environment
+uv sync
+uv run kagi-assistant share <share-uuid>
+# or run the module directly
+uv run kagi_assistant.py share <share-uuid>
 ```
 
 ## Usage
